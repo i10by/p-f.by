@@ -8,11 +8,11 @@
         <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
     </head>
     <body>
-        <div id="page">
-            <? get_template('top-menu'); ?>
-            <? get_page($url_page); ?>
-        </div>
-        <div id="window">
+        <div id="wrapper">
+            <? get_template('header'); ?>
+            <div id="page">
+                <? get_page($url_page); ?>
+            </div>
         </div>
 
         <script src="/template/js/jquery.js"></script>

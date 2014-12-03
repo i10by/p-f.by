@@ -1,3 +1,9 @@
+.in-p-c {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 700px;
+  max-width: 1200px;
+}
 @font-face {
   font-family: 'pt sans';
   font-weight: normal;
@@ -9,65 +15,170 @@
   src: url("../fonts/PTSansBold.ttf");
 }
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'pt sans', arial, tahoma;
   font-size: 15px;
   font-weight: normal;
+  cursor: default;
   -webkit-backface-visibility: hidden;
 }
 html,
 body {
   width: 100%;
   height: 100%;
-  background-color: #000000;
 }
-body {
-  padding-top: 150px;
-  background: #000000 url("../images/back.jpg") top center no-repeat;
+div#wrapper {
+  width: 100%;
+  background: #222222 url("../images/back.jpg") 100%;
+  padding: 50px 20px 100px;
+  overflow: hidden;
 }
 div#page {
-  display: table;
-  box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
   min-width: 700px;
   max-width: 1200px;
-  height: 200%;
-  background: #000000;
+  margin-top: 50px;
   color: #ffffff;
+  border-radius: 5px;
+  background-color: rgba(75, 75, 90, 0.75);
   overflow: hidden;
   z-index: 1000;
 }
 div#page > * {
   position: relative;
 }
-div#window {
-  position: fixed;
+div#page .page-body {
+  padding: 10px;
+  height: 100%;
+  color: #000000;
+}
+div#page .page-body .inner {
+  padding: 20px;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+}
+div#header {
+  height: 242px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 auto;
   width: 100%;
+  min-width: 700px;
+  max-width: 1200px;
+}
+div#header .img {
+  height: 200px;
+  background: url("../images/header.jpg") no-repeat center;
+  background-size: cover;
+}
+div#header .menu {
+  width: 100%;
+  height: 42px;
+  padding: 0 10px;
+  background-color: #fff;
+}
+div#header .menu a {
+  cursor: pointer;
+  float: left;
+  margin-right: 8px;
+  color: #4f9571;
+  font-size: 14px;
+  padding: 3px 6px;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+div#header .menu a:hover,
+div#header .menu a.active {
+  color: #ffffff;
+  background-color: #4f9571;
+}
+.content {
+  width: calc(100% - 300px);
+  float: left;
+  padding-right: 20px;
+}
+.content .post {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.content .post:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.content .post .title {
+  width: 100%;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.content .post .title .text {
+  float: left;
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #525d7c;
+  cursor: pointer;
+}
+.content .post .title .text:hover {
+  text-decoration: none;
+}
+.content .post .body {
+  width: 100%;
+  line-height: 1.5em;
+}
+.content .post .body .prev {
+  width: 400px;
+  height: 266.6666666666667px;
+  float: left;
+  clear: right;
+  margin: 0 20px 20px 0;
+}
+.right-bar {
+  position: absolute;
+  width: 300px;
   top: 0;
   bottom: 0;
-  visibility: hidden;
-  z-index: 2000;
-}
-div#window > * {
-  position: relative;
-  visibility: visible;
-}
-@media (min-width: 1200px) {
-  div#window {
-    width: 1200px;
-    left: 50%;
-    margin-left: -600px;
-  }
-}
-div#window .top-menu {
-  position: absolute;
-  width: 500px;
-  height: 35px;
-  top: 0;
   right: 0;
-  background-color: #222222;
-  border-radius: 0 0 2px 2px;
-  box-shadow: 0 0 3px #000000;
+  margin: 30px;
+  float: right;
+  border-left: 1px solid #ddd;
+  padding-left: 20px;
+}
+.right-bar .block {
+  width: 100%;
+  min-height: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.right-bar .block .title {
+  font-weight: bold;
+  color: #4f9571;
+  border-bottom: 1px dotted #4f9571;
+  margin-bottom: 10px;
+}
+.inline-label {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.inline-label * {
+  font-size: 13px;
+}
+.inline-label > .left {
+  float: left;
+}
+.inline-label > .right {
+  float: right;
 }

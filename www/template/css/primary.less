@@ -1,13 +1,22 @@
-@page-back: #000;
-@color-radiant: #222;
+@page-back: #222;
 @color-dark: #222;
 @color-font-light: #fff;
 @color-font-dark: #000;
+@color-radiant: #4f9571;
 
 @min-width: 700px;
 @max-width: 1200px;
-@page-padding-top: 150px;
+@header-height: 200px;
+@page-margin-bottom: 100px;
+@page-border-radius: 5px;
+@page-padding: 10px;
 
+.in-p-c {
+  margin: 0 auto;
+  width: 100%;
+  min-width: @min-width;
+  max-width: @max-width;
+}
 
 @font-face {
   font-family: 'pt sans';
@@ -21,68 +30,173 @@
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'pt sans', arial, tahoma;
   font-size: 15px;
   font-weight: normal;
+  cursor: default;
   -webkit-backface-visibility: hidden;
 }
 html, body {
   width: 100%;
   height: 100%;
-  background-color: @page-back;
 }
-body {
-  padding-top: @page-padding-top;
-  background: @page-back url("../images/back.jpg") top center no-repeat;
+div#wrapper {
+  width: 100%;
+  background: @page-back url("../images/back.jpg") 100%;
+  padding: 50px 20px @page-margin-bottom;
+  overflow: hidden;
 }
 div#page {
-  display: table;
-  box-sizing: border-box;
-  margin: 0 auto;
-  width: 100%;
-  min-width: @min-width;
-  max-width: @max-width;
-  height: 200%;
-  background: @page-back;
+  .in-p-c;
+  margin-top: 50px;
   color: @color-font-light;
+  border-radius: @page-border-radius;
+  background-color: rgba(75, 75, 90, 0.75);
   overflow: hidden;
   z-index: 1000;
 }
 div#page > * {
   position: relative;
 }
-div#window {
-  position: fixed;
+div#page .page-body {
+  padding: @page-padding;
+  height: 100%;
+  color: @color-font-dark;
+}
+div#page .page-body .inner {
+  padding: 20px;
+  height: 100%;
+  border-radius: @page-border-radius;
+  background-color: #fff;
+  overflow: hidden;
+}
+@header-img-height: 200px;
+@header-menu-height: 42px;
+@header-height: @header-img-height + @header-menu-height;
+div#header {
   width: 100%;
+  height: @header-height;
+  margin: 0 auto;
+  border-radius: @page-border-radius;
+  overflow: hidden;
+  .in-p-c;
+}
+div#header .img {
+  height: @header-img-height;
+  background: url("../images/header.jpg") no-repeat center;
+  background-size: cover;
+}
+div#header .menu {
+  width: 100%;
+  height: @header-menu-height;
+  padding: 0 10px;
+  background-color: #fff;
+}
+div#header .menu a {
+  cursor: pointer;
+  float: left;
+  margin-right: 8px;
+  color: @color-radiant;
+  font-size: 14px;
+  padding: 3px 6px;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+div#header .menu a:hover, div#header .menu a.active {
+  color: @color-font-light;
+  background-color: @color-radiant;
+}
+@right-bar-width: 300px;
+@content-width: @right-bar-width - 20px;
+.content {
+  width: calc(~"100%" - @right-bar-width);
+  float: left;
+  padding-right: 20px;
+}
+.content .post {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.content .post:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.content .post .title {
+  width: 100%;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.content .post .title .text {
+  float: left;
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #525d7c;
+  cursor: pointer;
+}
+.content .post .title .text:hover {
+  text-decoration: none;
+}
+.content .post .body {
+  width: 100%;
+  line-height: 1.5em;
+}
+@post-prev-width: 400px;
+.content .post .body .prev {
+  width: @post-prev-width;
+  height: @post-prev-width / 1.5;
+  float: left;
+  clear: right;
+  margin: 0 20px 20px 0;
+}
+.right-bar {
+  position: absolute;
+  width: @right-bar-width;
   top: 0;
   bottom: 0;
-  visibility: hidden;
-  z-index: 2000;
-}
-div#window > * {
-  position: relative;
-  visibility: visible;
-}
-@media (min-width: @max-width) {
-  div#window {
-    width: @max-width;
-    left: 50%;
-    margin-left: -(@max-width / 2);
-  }
-}
-
-@top-menu-width: 500px;
-@top-menu-height: 35px;
-
-div#window .top-menu {
-  position: absolute;
-  width: @top-menu-width;
-  height: @top-menu-height;
-  top: 0;
   right: 0;
-  background-color: @color-dark;
-  border-radius: 0 0 2px 2px;
-  box-shadow: 0 0 3px @page-back;
+  margin: 30px;
+  float: right;
+  border-left: 1px solid #ddd;
+  padding-left: 20px;
+}
+.right-bar .block {
+  width: 100%;
+  min-height: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.right-bar .block .title {
+  font-weight: bold;
+  color: @color-radiant;
+  border-bottom: 1px dotted @color-radiant;
+  margin-bottom: 10px;
+}
+.right-bar .block .body {
+
+}
+.inline-label {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.inline-label * {
+  font-size: 13px;
+}
+.inline-label > .left {
+  float: left;
+}
+.inline-label > .right {
+  float: right;
 }
