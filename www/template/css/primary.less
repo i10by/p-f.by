@@ -74,7 +74,7 @@ div#page .page-body .inner {
   overflow: hidden;
 }
 @header-img-height: 200px;
-@header-menu-height: 42px;
+@header-menu-height: 0; /* 42px */
 @header-height: @header-img-height + @header-menu-height;
 div#header {
   width: 100%;
@@ -118,6 +118,17 @@ div#header .menu a:hover, div#header .menu a.active {
   float: left;
   padding-right: 20px;
 }
+.content .content-title {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: @color-radiant;
+  border: 1px solid @color-radiant;
+  border-radius: 5px;
+}
 .content .post {
   width: 100%;
   overflow: hidden;
@@ -140,12 +151,8 @@ div#header .menu a:hover, div#header .menu a.active {
   display: block;
   font-size: 17px;
   font-weight: bold;
-  text-decoration: underline;
-  color: #525d7c;
+  color: @color-font-dark;
   cursor: pointer;
-}
-.content .post .title .text:hover {
-  text-decoration: none;
 }
 .content .post .body {
   width: 100%;
@@ -158,6 +165,14 @@ div#header .menu a:hover, div#header .menu a.active {
   float: left;
   clear: right;
   margin: 0 20px 20px 0;
+}
+.content .post .body .text {
+  float: right;
+  width: calc(~"100%" - (@post-prev-width + 20px));
+}
+.content .post .body .prev img {
+  width: 100%;
+  height: 100%;
 }
 .right-bar {
   position: absolute;
@@ -172,9 +187,9 @@ div#header .menu a:hover, div#header .menu a.active {
 }
 .right-bar .block {
   width: 100%;
-  min-height: 300px;
   background-color: #fff;
-  border-radius: 5px;
+  margin-bottom: 50px;
+  overflow: hidden;
 }
 .right-bar .block .title {
   font-weight: bold;
@@ -185,6 +200,14 @@ div#header .menu a:hover, div#header .menu a.active {
 .right-bar .block .body {
 
 }
+.i10-banner {
+  display: block;
+  width: 279px;
+  height: 80px;
+  background: url("../images/i10-banner.jpg") center no-repeat;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .inline-label {
   width: 100%;
   float: left;
@@ -192,7 +215,7 @@ div#header .menu a:hover, div#header .menu a.active {
   margin-bottom: 5px;
 }
 .inline-label * {
-  font-size: 13px;
+  font-size: 14px;
 }
 .inline-label > .left {
   float: left;

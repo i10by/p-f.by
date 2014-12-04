@@ -12,4 +12,10 @@
             </div>
         </div>
     </div>
+    <div class="block">
+        <div class="title">Партнёры</div>
+        <div class="body">
+            <a href="http://i10.by" target="_blank" class="i10-banner"></a>
+        </div>
+    </div>
 </div>
