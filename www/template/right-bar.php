@@ -4,11 +4,19 @@
         <div class="body">
             <div class="inline-label">
                 <div class="left">Телефон:</div>
+                <div class="right">+8 0232 979-290</div>
+            </div>
+             <div class="inline-label">
+                <div class="left">Факс:</div>
+                <div class="right">+8 0232 979-291</div>
+            </div>
+            <div class="inline-label">
+                <div class="left"> </div>
                 <div class="right">+375 29 697-22-43</div>
             </div>
             <div class="inline-label">
                 <div class="left">E-mail:</div>
-                <div class="right">parfenkov@farmer.by</div>
+                <div class="right">andrei-parfenkov@mail.ru</div>
             </div>
         </div>
     </div>
