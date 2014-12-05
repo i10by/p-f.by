@@ -20,3 +20,14 @@
     function get_template($tml_name) {
         include '/template/'.$tml_name.'.php';
     }
+
+    function get_page_sector() {
+        $url = explode('/', $_SERVER['REQUEST_URI']);
+
+        return $url[1];
+    }
+
+    function active_is_page($page) {
+        if($page == get_page_sector())
+            echo 'active';
+    }

@@ -1,8 +1,7 @@
 <div id="header">
     <div class="img"></div>
     <div class="menu">
-        <a href="/" class="active">Главная</a>
-        <a href="#">Продукция</a>
-        <a href="#">Связаться</a>
+        <a href="/" class="<? active_is_page(""); ?>">Продукция</a>
+        <a href="/ord" class="<? active_is_page("ord"); ?>">Оставить заявку</a>
     </div>
 </div>
