@@ -72,6 +72,19 @@
                     </div>
                 </div>
             </div>
+             <div class="post">
+                <div class="title">
+                    <div class="text">Капуста</div>
+                </div>
+                <div class="body">
+                    <div class="prev">
+                        <img src="/template/images/capusta.jpg">
+                    </div>
+                    <div class="text">
+
+                    </div>
+                </div>
+            </div>
         </div>
         <? get_template('right-bar'); ?>
     </div>
