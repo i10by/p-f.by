@@ -18,7 +18,7 @@
     }
 
     function get_template($tml_name) {
-        include '/template/'.$tml_name.'.php';
+        include 'template/'.$tml_name.'.php';
     }
 
     function get_page_sector() {
