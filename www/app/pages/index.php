@@ -48,7 +48,7 @@
                 </div>
                 <div class="body">
                     <div class="prev">
-                        <img src="/template/images/svecla.jpg">
+                        <img src="/template/images/svecla.JPG">
                     </div>
                     <div class="text">
                         Мякоть темно-красная (бордо), светлые кольца на разрезе почти отсутствуют.
@@ -61,7 +61,7 @@
                 </div>
                 <div class="body">
                     <div class="prev">
-                        <img src="/template/images/morkov.jpg">
+                        <img src="/template/images/morkov.JPG">
                     </div>
                     <div class="text">
                         Морковь отличается сочной, сладкой, нежной мякотью и небольшой сердцевиной.
@@ -74,7 +74,7 @@
                 </div>
                 <div class="body">
                     <div class="prev">
-                        <img src="/template/images/capusta.jpg">
+                        <img src="/template/images/capusta.JPG">
                     </div>
                     <div class="text">
 
