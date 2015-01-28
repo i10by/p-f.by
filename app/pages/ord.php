@@ -1,7 +1,7 @@
 <div class="page-body">
     <div class="inner">
         <div class="content">
-            <div class="content-title">Оставить заявку</div>
+            <br>
             <form id="send-mail" class="form-center">
                 <div id="send-mail-success">
                     Успешно отправлено! <a id="zak-ag">Ещё раз</a>
