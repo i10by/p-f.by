@@ -16,6 +16,6 @@
         </html>';
 
     $headers  = "Content-type: text/html; charset=utf-8 \r\n";
-    $headers .= "From: p-f.by <notifications@p-f.by> \r\n";
+    $headers .= "From: parfenkov-fermer.by <notifications@parfenkov-fermer.by> \r\n";
 
     mail($to, $subject, $message, $headers);
