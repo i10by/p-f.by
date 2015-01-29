@@ -16,7 +16,7 @@
             </div>
             <div class="inline-label">
                 <div class="left">E-mail:</div>
-                <div class="right">andrei-parfenkov@mail.ru</div>
+                <div class="right">andrei-parfenkov@yandex.ru</div>
             </div>
         </div>
     </div>
