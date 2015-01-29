@@ -1,7 +1,7 @@
 <?php
     header("Location: /");
 
-    $to  = "andrei-parfenkov@mail.ru";
+    $to  = "andrei-parfenkov@yandex.ru";
 
     $subject = "p-f.by | Новая заявка на заказ!";
 
