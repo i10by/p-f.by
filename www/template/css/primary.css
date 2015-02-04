@@ -1,8 +1,8 @@
 .in-p-c {
   margin: 0 auto;
   width: 100%;
-  min-width: 700px;
-  max-width: 1200px;
+  min-width: 650px;
+  max-width: 1000px;
 }
 @font-face {
   font-family: 'pt sans';
@@ -36,7 +36,7 @@ div#wrapper {
 }
 div#page {
   margin: 0 auto;
-  width: 1200px;
+  width: 1000px;
   margin-top: 50px;
   color: #ffffff;
   border-radius: 5px;
@@ -49,7 +49,7 @@ div#page > * {
 }
 div#page .page-body {
   height: 100%;
-  min-width: 1050px;
+  min-width: 1000px;
   color: #000000;
 }
 div#page .page-body .inner {
@@ -60,17 +60,15 @@ div#page .page-body .inner {
   overflow: hidden;
 }
 div#header {
-  height: 242px;
+  height: 200px;
   border-radius: 5px;
   overflow: hidden;
   margin: 0 auto;
-  width: 100%;
-  width: 700px;
-  width: 1200px;
+  width: 1000px;
 }
 div#header .img {
-  height: 200px;
-  width: 1200px;
+  height: 160px;
+  width: 1000px;
   background: url("../images/header.jpg") no-repeat center;
   background-size: cover;
 }
@@ -98,7 +96,7 @@ div#header .menu a.active {
   background-color: #4f9571;
 }
 .content {
-  width: 800px;
+  width: 650px;
   float: left;
   padding-right: 20px;
 }
@@ -143,8 +141,8 @@ div#header .menu a.active {
 }
 
 .content .post .body .prev {
-  width: 400px;
-  height: 266.6666666666667px;
+  width: 300px;
+  height: 200px;
   float: left;
   clear: right;
   margin: 0 20px 0px 0px;
@@ -152,7 +150,7 @@ div#header .menu a.active {
 }
 .content .post .body .text {
   float: right;
-  width: 360px;
+  width: 300px;
 }
 .content .post .body .prev img {
   width: 100%;
@@ -161,7 +159,7 @@ div#header .menu a.active {
 
 .right-bar {
   position: absolute;
-  width: 300px;
+  width: 250px;
   top: 0;
   bottom: 0;
   right: 0;
@@ -183,7 +181,7 @@ div#header .menu a.active {
 }
 .i10-banner {
   display: block;
-  width: 279px;
+  width: 225px;
   height: 60px;
   background: url("../images/i10-banner.jpg") center no-repeat;
   border-radius: 5px;
@@ -205,7 +203,7 @@ div#header .menu a.active {
   float: right;
 }
 .form-center {
-  width: 400px;
+  max-width: 500px;
   min-height: 500px;
   margin: 0 auto;
 }
@@ -226,6 +224,7 @@ div#header .menu a.active {
   cursor: text;
   border: 1px solid #bbb;
   box-shadow: inset 0 2px 4px #ccc;
+  border-radius: 5px;
 }
 .form-center textarea {
   min-height: 200px;
@@ -296,6 +295,7 @@ color: #4f9571;
 }
 
 iframe {
-  height: 246px;
+  height: 190px;
+  width: 300px;
   border-radius: 5px;
 }
