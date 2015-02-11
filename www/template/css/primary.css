@@ -181,9 +181,11 @@ div#header .menu a.active {
 }
 .i10-banner {
   display: block;
-  width: 225px;
-  height: 60px;
-  background: url("../images/i10-banner.jpg") center no-repeat;
+  width: 138px;
+  height: 50px;
+  margin-left: 50px;
+  margin-top: 20px;
+  background: url("../images/banner-mini-dark.png") center no-repeat;
   border-radius: 5px;
   cursor: pointer;
 }
