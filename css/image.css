@@ -1,0 +1,21 @@
+span.phone {
+    background: url("../img/phone.png") no-repeat;
+}
+
+span.fax {
+    background: url("../img/fax.png") no-repeat;
+}
+
+span.mobile {
+    background: url("../img/mobile.png") no-repeat;
+}
+
+span.email {
+    background: url("../img/email.png") no-repeat;
+}
+
+span.icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
