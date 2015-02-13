@@ -147,7 +147,9 @@ div.price-item div {
 }
 
 div#footer {
-    width: 100%;
+    width: 800px;
+    margin: 50px auto;
+    color: gray;
 }
 
 span.bold {
