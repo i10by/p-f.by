@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/gui.js"></script>
+    <script src="js/engine.js"></script>
     <script src="js/jquery-2.1.1.min.js"></script>
     <title>ф/х Парфенькова Андрея Леонидовича</title>
 </head>
 <body>
     <div class="container">
-        <div class="header">
+        <div id="header">
             <div class="menu">
-                <div id="contacts" class="menu-item" onclick="select('contacts');">
+                <div id="contacts" class="menu-item" onclick="select('contacts'); load('pages/Feed-Back.html')">
                     Контакты
                 </div>
-                <div id="price" class="menu-item" onclick="select('price');">
+                <div id="price" class="menu-item" onclick="select('price'); load('pages/Price.html')">
                     Каталог
                 </div>
-                <div id="about" class="menu-item sel" onclick="select('about')">
+                <div id="about" class="menu-item sel" onclick="select('about'); load('pages/About.html')">
                    О нас
                 </div>
                 <div class="logo">
@@ -29,7 +30,7 @@
                 <span class="title">Парфенькова Андрея Леонидовича</span>
             </div>
         </div>
-        <div class="body">
+        <div id="body">
 
         </div>
         <script>

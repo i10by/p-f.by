@@ -2,8 +2,8 @@
  * Created by a.l.parf on 13.02.2015.
  */
 function main() {
-    alert("ready");
     resizeWin();
+    load('pages/About.html');
     $(window).resize( function() {
         resizeWin();
     });

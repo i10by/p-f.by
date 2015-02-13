@@ -22,14 +22,41 @@ div.container {
     min-width: 600px;
 }
 
-div.header {
+div#header {
     width: 100%;
     height: 300px;
-    background: url(../img/menu-img.jpg);
+    background: url(../img/menu-img.jpg) no-repeat;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
 }
 
-div.body {
-    width: 100%;
+div#body {
+    width: 1000px;
+    margin: auto auto;
+}
+
+div.inner-body {
+    margin-top: 50px;
+    min-width: 800px;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    1px 1px 1px 1px rgba(50, 50, 50, 0.5);
+    box-shadow:         1px 1px 1px 1px rgba(50, 50, 50, 0.5);
+}
+
+div.content {
+    padding: 10px;
+    line-height: 64px;
+    font-weight: bold;
+    text-align: left;
+}
+
+div.body-title {
+    background-color: #ff8b1b;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
 }
 
 div.title {
@@ -62,15 +89,14 @@ div.menu-item {
     color: white;
     cursor: pointer;
     background-color: #ff8b1b;
-    opacity: 0.8;
 }
 
 div.menu-item :hover {
-    opacity: 1;
+    background-color: #da6e1b;
 }
 
 div.sel {
-    opacity: 1;
+    background-color: #da6e1b;
 }
 
 div.logo {
