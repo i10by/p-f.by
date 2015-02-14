@@ -4,7 +4,7 @@
 function load(page) {
     var ABOUT = "pages/About-Us.html";
     var PRICE = "pages/Price.html";
-    var FEED_BACK = "pages/Feed-Back.html";
+    var FEED_BACK = "pages/Contacts.html";
     switch (page) {
         case ABOUT : {
             loadPage(page);
