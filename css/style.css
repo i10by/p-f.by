@@ -65,7 +65,7 @@ div.body-title {
 
 div.title {
     text-align: left;
-    padding: 80px;
+    padding: 60px;
     width: 100%;
     font-size: 20px;
     color: white;
@@ -78,30 +78,30 @@ span.title {
 
 div.menu {
     width: 100%;
-    height: 50px;
+    height: 80px;
     border-bottom: solid 1px #da6e1b;
 }
 
 div.menu-item {
-    height: 50px;
+    height: 80px;
     border-left: solid 1px #ff8b1b;
     border-bottom: solid 1px #ff8b1b;
     float: right;
     width: 100px;
     text-align: center;
-    line-height: 50px;
+    line-height: 80px;
     color: white;
     cursor: pointer;
-    background-color: #ffa522;
+    background-color: #ff8b1b;
+    opacity: 0.8;
 }
 
 div.menu-item :hover {
-    background-color: #ff8b1b;
+    opacity: 1;
 }
 
 div.sel {
-
-    background-color: #ff8b1b;
+    opacity: 1;
 }
 
 div.map {
@@ -114,9 +114,9 @@ div.map {
 
 div.logo {
     background-color: #ff8b1b;
-    height: 50px;
+    height: 80px;
     float: right;
-    opacity: 0.3;
+    opacity: 0.4;
     color: white;
     text-align: right;
     min-width: calc(100% - 300px);
