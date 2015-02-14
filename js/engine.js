@@ -2,7 +2,7 @@
  * Created by a.l.parf on 13.02.2015.
  */
 function load(page) {
-    var ABOUT = "pages/About.html";
+    var ABOUT = "pages/About-Us.html";
     var PRICE = "pages/Price.html";
     var FEED_BACK = "pages/Feed-Back.html";
     switch (page) {
