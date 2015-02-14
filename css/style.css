@@ -84,23 +84,24 @@ div.menu {
 
 div.menu-item {
     height: 50px;
-    border-left: solid 1px #da6e1b;;
-    border-bottom: solid 1px #da6e1b;;
+    border-left: solid 1px #ff8b1b;
+    border-bottom: solid 1px #ff8b1b;
     float: right;
     width: 100px;
     text-align: center;
     line-height: 50px;
     color: white;
     cursor: pointer;
-    background-color: #ff8b1b;
+    background-color: #ffa522;
 }
 
 div.menu-item :hover {
-    background-color: #ffa522;
+    background-color: #ff8b1b;
 }
 
 div.sel {
-    background-color: #ffa522;
+
+    background-color: #ff8b1b;
 }
 
 div.map {
