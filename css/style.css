@@ -112,14 +112,24 @@ div.map {
     margin-top: 35px;
 }
 
-div.logo {
+div.space-left  {
     background-color: #ff8b1b;
     height: 80px;
     float: right;
     opacity: 0.4;
     color: white;
     text-align: right;
-    min-width: calc(100% - 300px);
+    width: calc(80% - 300px);
+}
+
+div.space-right {
+    background-color: #ff8b1b;
+    height: 80px;
+    float: right;
+    opacity: 0.4;
+    color: white;
+    text-align: right;
+    width: 20%;
 }
 
 div.price-item {
