@@ -25,7 +25,11 @@ function load(page) {
 }
 
 function loadPage(page) {
+    $("#body").hide();
     $.post( page , function ( data ) {
         $("#body").html(data);
     });
+    setTimeout(function() {
+        $("#body").slideDown("slow");
+    }, 100);
 }
