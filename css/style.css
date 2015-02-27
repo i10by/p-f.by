@@ -89,7 +89,7 @@ div.menu {
     width: 100%;
     height: 80px;
     padding-left: 35%;
-    border-bottom: solid 1px #ff8b1b;
+    border-bottom: solid 1px #ffb35e;
     background: url("../img/bg-orange.png");
 }
 
@@ -98,15 +98,15 @@ div.phone {
     line-height: 80px;
     float: left;
     text-align: right;
-    border-right: solid 1px #ff8b1b;
+    border-right: solid 1px #ffb35e;
     padding-right: 20px;
     font-size: 30px;
 }
 
 div.menu-item {
     height: 80px;
-    border-right: solid 1px #ff8b1b;
     float: left;
+    border-right: solid 1px #ffb35e;
     text-align: center;
     line-height: 80px;
     color: white;
@@ -118,6 +118,7 @@ div.menu-item {
 
 div.sel {
     background-color: #ff8b1b;
+    border-bottom: solid 1px #ffb35e;
 }
 
 div.map {
